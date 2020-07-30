@@ -1,0 +1,4 @@
+pyOpenSSL
+pyperclip
+termcolor
+secrets
