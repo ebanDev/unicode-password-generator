@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# -*- coding: latin-1 -*-
+# -*- coding: utf-8 -*-
 import secrets
 import pyperclip
 
@@ -14,13 +14,5 @@ while inc != int(long):
         password += chr(random_number)
         inc += 1
 
-sentence = "Votre mot de passe est :"
-sentence += password
-
-print()
-print(sentence)
-print()
 pyperclip.copy(password)
-print("Votre mot de passe a été copié dans le presse papier")
-print()
-print("N'oubliez pas de le stocker dans un gestionnaire de mot de passe tel que Bitwarden, Keepass ou Nextcloud Password")
+print("Votre mot de passe est :", password, "\nIl a été copié dans le presse papier \nN'oubliez pas de le stocker dans un gestionnaire de mot de passe tel que Bitwarden, Keepass ou Nextcloud Password")
